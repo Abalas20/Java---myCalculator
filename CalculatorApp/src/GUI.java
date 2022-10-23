@@ -17,7 +17,7 @@ public class GUI extends JFrame{
 
 	private JMenu menu;
 	
-	private Dimension panelDim = new Dimension(404, 725);
+	private Dimension panelDim = new Dimension(391, 438);
 	
 	private JPanel cardPanel;
 	

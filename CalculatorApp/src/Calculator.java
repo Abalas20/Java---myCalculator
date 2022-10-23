@@ -79,20 +79,20 @@ public class Calculator extends JPanel {
         inputResultField.setFont(new Font("Arial Black", Font.BOLD, 24));
         inputResultField.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
 
-        this.add(historyField, "dock north, gapy 0, gapx 0, grow, wrap, width 404!, height 50!");
-        this.add(inputResultField, "dock north, gapy 0, gapx 0, grow, width 404!, height 50!");
+        this.add(historyField, "dock north, gapy 0, gapx 0, grow, wrap, width 391!, height 50!");
+        this.add(inputResultField, "dock north, gapy 0, gapx 0, grow, width 389!, height 50!");
 
         int buttonWrapCounter = 1;
         for(JButton button: jbuttonArray){
             button.addActionListener(bal);
             if(buttonWrapCounter % 4 == 0){
-                this.add(button, "gapy 1, gapx 1, wrap, width 100!, height 100!");
+                this.add(button, "gapy 0.5, gapx 1, wrap, width 96!, height 55!");
             }
             else if(buttonWrapCounter % 4 == 1){
-                this.add(button, "split 4, gapy 1, gapx 1, grow, width 100!, height 100!");
+                this.add(button, "split 4, gapy 0.5, gapx 1, grow, width 96!, height 55!");
             }
             else{
-                this.add(button, "gapy 1, gapx 1, grow, width 100!, height 100!");
+                this.add(button, "gapy 0.5, gapx 1, grow, width 96!, height 55!");
             }
             buttonWrapCounter++;
         }
