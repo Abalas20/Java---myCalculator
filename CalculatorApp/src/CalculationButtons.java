@@ -25,7 +25,7 @@ public class CalculationButtons {
                 // creates an array of buttons for the calculator panel
                 // names for the buttons
                 String[] bNamesCalculator = {"%", "√", "X²", "1/X", "CE", "C", "⌫", "÷", "7", "8", "9", "x",
-                        "4", "5", "6", "-", "1", "2", "3", "+", "±", "0", ",", "="};
+                        "4", "5", "6", "-", "1", "2", "3", "+", "±", "0", ".", "="};
                 // key codes for the keystrokes
                 int[] keyEvents = {1000, 1000, 1000, 1000, 1000, KeyEvent.VK_DELETE, 8, 111,
                         KeyEvent.VK_NUMPAD7, KeyEvent.VK_NUMPAD8, KeyEvent.VK_NUMPAD9, 106, KeyEvent.VK_NUMPAD4,
@@ -42,7 +42,7 @@ public class CalculationButtons {
             case "Standard":
                 // creates an array of buttons for all types of panels
                 String[] bNamesStandard = {"empty", "CE", "⌫", "7", "8", "9",
-                        "4", "5", "6", "1", "2", "3", "empty", "0", ","}; // names for the buttons
+                        "4", "5", "6", "1", "2", "3", "empty", "0", "."}; // names for the buttons
                 int[] keyEvents2 = {1000, KeyEvent.VK_DELETE, 8,
                         KeyEvent.VK_NUMPAD7, KeyEvent.VK_NUMPAD8, KeyEvent.VK_NUMPAD9, KeyEvent.VK_NUMPAD4,
                         KeyEvent.VK_NUMPAD5, KeyEvent.VK_NUMPAD6, KeyEvent.VK_NUMPAD1, KeyEvent.VK_NUMPAD2,

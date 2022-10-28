@@ -41,7 +41,7 @@ public class Calculator extends JPanel {
     private String lastOperatorUsed = "";
     private String lastSpecialOperator = "";
     
-    private Font charFont = new Font("Arial Black", Font.BOLD, 24 );
+    private Font charFont = new Font("Arial", Font.PLAIN, 24 );
 
     private JPanel inputPanel = new JPanel(new MigLayout());
 
@@ -76,7 +76,7 @@ public class Calculator extends JPanel {
         inputResultField.setBorder(BorderFactory.createEmptyBorder());
         inputResultField.setBackground(Color.WHITE);
         inputResultField.setEditable(false);
-        inputResultField.setFont(new Font("Arial Black", Font.BOLD, 24));
+        inputResultField.setFont(new Font("Arial Black", Font.PLAIN, 24));
         inputResultField.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
 
         this.add(historyField, "dock north, gapy 0, gapx 0, grow, wrap, width 391!, height 50!");
@@ -146,9 +146,9 @@ public class Calculator extends JPanel {
             else if(command.equals(".")) {
                 if(!inputString.toString().contains(".")) {
                     if (!inputString.toString().isEmpty()) {
-                        inputString.append(".");
+                        inputString = inputString.append(".");
                     } else {
-                        inputString.append("0" + ".");
+                        inputString = inputString.append("0" + ".");
                     }
                 }
             }
@@ -258,7 +258,7 @@ public class Calculator extends JPanel {
 	                case "x":
 	                    multiplicationCalculator();
 	                    break;
-	                case "/":
+	                case "÷":
 	                    divisionCalculator();
 	                    break;
 	                default:
