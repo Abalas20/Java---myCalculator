@@ -7,4 +7,4 @@ A Calculator App made in Java, similar with the Windows 10 Calculator.
 <img src="Img\Calc.png">   
 <img src="Img\Menu.png">
 
-<video src="Img\CalculatorVid.mp4"></video>
+<img src="Img\CalculatorVid.gif">
