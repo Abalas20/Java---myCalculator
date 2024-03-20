@@ -1,4 +1,4 @@
-# Java---myCalculator
+# Java Calculator
 A Calculator App made in Java, similar with the Windows 10 Calculator.
 
 ### The calculator is working.
